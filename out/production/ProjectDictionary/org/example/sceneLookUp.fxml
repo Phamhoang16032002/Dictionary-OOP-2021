@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="513.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.SceneLookUpController">
+    <children>
+      <ImageView fitHeight="513.0" fitWidth="698.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Picture/sceneLookUp.png" />
+         </image>
+      </ImageView>
+        <Label fx:id="labelDelete" layoutX="499.0" layoutY="129.0" onMouseClicked="#clickLabelDelete" onMouseEntered="#enterLabelDelete" onMouseExited="#exitLabelDelete" prefHeight="50.0" prefWidth="147.0" />
+        <TextField fx:id="insertWord" layoutX="21.0" layoutY="35.0" prefHeight="78.0" prefWidth="224.0" promptText="INSERT WORD" styleClass="text" />
+        <TextArea fx:id="explainWord" editable="false" layoutX="272.0" layoutY="34.0" prefHeight="78.0" prefWidth="375.0" promptText="EXPLAIN WORD" styleClass="text" />
+        <ListView fx:id="suggestWord" layoutX="21.0" layoutY="129.0" prefHeight="374.0" prefWidth="224.0" visible="false" />
+      <Label fx:id="labelPronounce" layoutX="196.0" layoutY="54.0" onMouseClicked="#clickLabelPronounce" onMouseEntered="#enterLabelPronounce" onMouseExited="#exitLabelPronounce">
+         <graphic>
+            <ImageView fitHeight="41.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Picture/pronounce.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+          <ImageView fitHeight="50.0" fitWidth="147.0" layoutX="500.0" layoutY="129.0" onMouseClicked="#clickLabelDelete" onMouseEntered="#enterLabelDelete" onMouseExited="#exitLabelDelete" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image url="@Picture/delete.png" />
+              </image>
+          </ImageView>
+    </children>
+</AnchorPane>
